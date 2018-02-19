@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int s = in.nextInt();
+        int t = in.nextInt();
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int m = in.nextInt();
+        int n = in.nextInt();
+        int[] ap = new int[m];
+        int c=0,d=0;
+        for(int ai=0; ai < m; ai++){
+            ap[ai] = in.nextInt();
+        }
+        int[] o = new int[n];
+        for(int oi=0; oi < n; oi++){
+            o[oi] = in.nextInt();
+        }
+        for(int i=0;i<m;i++){
+          {
+             if((ap[i]+a>=s)&&(ap[i]+a)<=t)
+                c++;
+        }
+        }
+        for(int i=0;i<n;i++){
+            
+              {  if((o[i]+b>=s)&&(o[i]+b<=t))
+                d++;
+              }
+      
+        }
+        System.out.println(c);
+        System.out.println(d);
+    }
+}
